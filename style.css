@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --thin :100;
+  --medium :500;
+  --bold :700;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+}
+body {
+  background-color: #F4F4F5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  background-color: white;
+  height: 70px;
+  border-bottom: 1px solid rgb(196, 193, 193);
+}
+
+.nav-left {
+margin-left: 3rem;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  font-weight: var(--bold);
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-right: 5rem;
+  font-weight: var(--bold);
+  position: relative;
+}
+
+.title {
+  margin-left: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem; 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+.content-left{
+  width: 50%;
+  margin-left: 3rem;
+}
+
+.google-docs, .google-slide {
+  border: 1px solid #ddd;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0 5%;
+  }
+
+/* .google-slide {
+  border: 1px solid #ddd;
+  flex: 0 0 auto;
+  background-color: aquamarine;
+} */
+
+.linebreak {
+  width: 1px;
+  height: 40px;
+  border: 1px solid rgb(170, 167, 167);
+}
+
+.google-docs img:nth-child(2), .google-slide img:nth-child(2) {
+  width: 150px;
+  height: 200px;
+  margin: 30px;
+}
+
+.google-docs img:nth-child(1), .google-slide img:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+.dot {
+  display: flex;
+  gap: 12px;
+  top: 50px
+}
+
+.dot-1, .dot-2, .dot-3 {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #dddd;
+
+}
+
+.dot-1:hover {
+  cursor: pointer;
+  background-color: lightseagreen;
+}
+.dot-2:hover {
+  cursor: pointer;
+  background-color: lightseagreen;
+}
+.dot-3:hover {
+  cursor: pointer;
+  background-color: lightseagreen;
+}
+
+select{
+  padding: 8px 16px;
+  font-family: prompt;
+  font-weight: 500;
+  color: #9E9E9E;
+  background-color: white;
+  border: 1px solid rgba(153, 153, 153, 0.336);
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  left: 90px;
+  margin-bottom: 30px;
+  top: -25px;
+}
+
+.topic-course {
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: #415984;
+  padding-bottom: 25px;
+}
+
+.price-course {
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #415984;
+}
+
+/* order checkout */
+.orderinfo {
+  margin: 20px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 30px;
+  align-items: start;
+  padding: 30px;
+}
+.subtotal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.coupon{
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.coupon input {
+  width: 300px;
+  height: 48px;
+  border-radius: 4px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  font-size: 14px;
+  padding: 16px;
+  margin: 0 15px;
+}
+
+.coupon button {
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1.5px solid #59C4AE;
+  color: #59C4AE;
+  outline: none;
+  border-radius: 16px;
+}
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.total h1 {
+  color: #59C4AE;
+  font-size: 36px;
+  font-weight: 500;
+}
+.checkoutbutton {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkoutbutton button{
+  width: 90%;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #00DBB6;
+  border: none;
+  box-shadow: 0px 6px 20px #adf0dc;
+  font-size: 20px;
+  color: #212E4B;
+  font-weight: 500;
+}
+
+.right-cart img {
+  width: 30px;
+  height: 30px;
+}
+
+.cart-noti {
+    position: absolute;
+    top: 3px;
+    left: 70px;
+    font-size: 8.5px;
+    width: 11px;
+    height: 11px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
